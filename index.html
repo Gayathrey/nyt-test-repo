@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velkommen til Hej Haj</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pc.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+</head>
+
+<body>
+    <header class="">
+        <div class="flex-all space-between center-box padding-std">
+            <a href="index.html" class="logo-link">
+                <img class="logo" src="logo.png" alt="Hej haj">
+            </a>
+            <div class="flex-all direction-column">
+
+                
+                <form id="form-login" class="form form-login flex-all hidden">
+                    <input class="form-login-input form-login-user" type="text" placeholder="Brugernavn">
+                    <input class="form-login-input form-login-pw" type="password" placeholder="Password">
+                    <input  class="form-login-input form-login-submit" type="submit" value="login">
+                </form>
+                <button id="toggle-login" class="toggle-login">Log ind</button>
+
+                <form class="form form-search flex-all">
+                    <input type="text" placeholder="Søg på siden">
+                    <input class="search-btn" type="image" src="search.png">
+                </form>
+            </div>
+
+        </div>
+        <div class="solid-bg">
+            <nav class="menu center-box">
+                <input type="checkbox" class="menu-check" id="menu-check">
+                <label for="menu-check" class="burger flex-all">
+                    <img src="burger.png" alt="" class="burger-icon">
+                    <img src="burger-close.png" alt="" class="burger-icon-close">
+                </label>
+                <ul class="dropdown no-margin">
+                    <li>
+                        <a href="#">Forside</a>
+                    </li>
+                    <li>
+                        <a href="#">Om os</a>
+                    </li>
+                    <li>
+                        <a href="#">Produkter</a>
+                    </li>
+                    <li>
+                        <a href="#">Kontakt os</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <div class="banner flex-all">
+        
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
+        <h2 class="text-overlay"><a class="text-overlay" href="#info">Læs alt om hajer!</a></h2>
+    </div>
+    <main class="center-box">
+        <div class="flex-desk two-cols">
+            <article id="info" class="padding-std">
+                <h1>Alt om hajer</h1>
+                <div class="pc-entry">
+                    <h2 class="pc-heading">Produkt 1</h2>
+                    <img src="https://www.carbonbrief.org/wp-content/uploads/2018/07/great-white-shark-1550x804.jpg" alt="">
+                    <div class="pc-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eaque nam quia rem reprehenderit iusto neque accusamus suscipit cum facilis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, earum praesentium, repudiandae minus omnis saepe officia porro consequatur error, deserunt beatae distinctio? Repellendus, delectus iste.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad voluptate hic labore veritatis nihil dolorum tempore nam sequi ab ipsum commodi fugiat quae eum, officiis tenetur doloremque magnam? Saepe!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iure, exercitationem mollitia consequatur praesentium vitae alias.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo nisi reprehenderit molestias voluptatem consequatur ab ipsa neque assumenda.</p>
+                    </div>
+                    <button class="pc-more">
+                        <span class="pc-more-txt-1"> Læs mere</span> 
+                        <span class="pc-more-txt-2"> Læs mindre</span> 
+                    </button>
+                </div>
+                <div class="pc-entry">
+                    <h2 class="pc-heading">Produkt 1</h2>
+                    <img src="https://www.carbonbrief.org/wp-content/uploads/2018/07/great-white-shark-1550x804.jpg" alt="">
+                    <div class="pc-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eaque nam quia rem reprehenderit iusto neque accusamus suscipit cum facilis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, earum praesentium, repudiandae minus omnis saepe officia porro consequatur error, deserunt beatae distinctio? Repellendus, delectus iste.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad voluptate hic labore veritatis nihil dolorum tempore nam sequi ab ipsum commodi fugiat quae eum, officiis tenetur doloremque magnam? Saepe!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iure, exercitationem mollitia consequatur praesentium vitae alias.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo nisi reprehenderit molestias voluptatem consequatur ab ipsa neque assumenda.</p>
+                    </div>
+                    <button class="pc-more">
+                        <span class="pc-more-txt-1"> Læs mere</span> 
+                        <span class="pc-more-txt-2"> Læs mindre</span> 
+                    </button>
+                </div>
+            </article>
+            <div class="gmap padding-std">
+                <h2>Find os</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.6427744871976!2d12.083904715389217!3d55.62563128051953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525febe81aa287%3A0x9864d6527aec94c3!2sPulsen%208%2C%204000%20Roskilde!5e0!3m2!1sda!2sdk!4v1597912597557!5m2!1sda!2sdk"
+                    height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+
+    </main>
+    <div class="solid-bg">
+        <footer class="flex-all two-cols center-box">
+            
+            <form class="form form-kontakt">
+                <h3>Kontakt Hej Haj</h3>
+                <p>
+                    <input type="text" placeholder="Navn">
+                </p>
+                <p>
+                    <input type="email" placeholder="E-mail">
+                </p>
+                <p>
+                    <textarea placeholder="Skriv besked her"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+            </form>
+
+            <form class="form form-newsletter">
+                <h3>Modtag nyhedsbrev</h3>
+                <p>
+                    <input type="text" placeholder="Navn">
+                </p>
+                <p>
+                    <input type="email" placeholder="E-mail">
+                </p>
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+            </form>
+
+        </footer>
+    </div>
+    <script src="pc.js"></script>
+    <script src="togglelogin.js"></script>
+
+</body>
+
+</html>
